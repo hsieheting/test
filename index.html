@@ -1,114 +1,12 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Gamedev Canvas Workshop</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        canvas {
-            background: #000;
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-
-    <style type="text/css">
-        #rightBar {
-
-            z-index: 9999;
-
-            width: 50px;
-
-            position: fixed;
-
-            right: 10px;
-
-            bottom: 5%;
-
-            height: auto;
-
-        }
-
-        #rightBar .btn {
-
-            width: 50px;
-
-            height: 50px;
-
-            text-align: center;
-
-            line-height: 20px;
-
-            display: inline-block;
-
-            border-radius: 10px;
-
-            cursor: pointer;
-
-        }
-    </style>
-
-    <div id="rightBar">
-
-        <div class="btn" id="shougongBtn"><span><a href="javascript:%20window.scrollTo(0,%200);"><img
-                        src="https://hosting.url.com.tw/img/go-top.png" /></a></span></div>
-
-    </div>
-
-    <p></p>
-    <p class="rvps2"><span class="rvts6"><br /></span></p>
-    <p class="rvps2"><span class="rvts16"><br /></span></p>
-    <p class="rvps2"><span class="rvts6"><br /></span></p>
-    <p class="rvps2"><span class="rvts6">步驟一：請複製以下語法</span></p>
-    <p class="rvps2"><span class="rvts6"><br /></span></p>
-    <p class="rvps2"><span class="rvts6">&lt;!-- 網頁捲軸移動至頂語法 開始 --&gt;</span></p>
-    <p class="rvps2"><span class="rvts6">&nbsp;</span></p>
-    <p class="rvps2"><span class="rvts6">&lt;style type="text/css"&gt;</span></p>
-    <p class="rvps2"><span class="rvts6">#rightBar {</span></p>
-    <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; z-index: 9999;</span></p>
-    <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; width: 50px;</span></p>
-    <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; position: fixed;</span></p>
-    <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; right: 10px;</span></p>
-    <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; bottom: 5%;</span></p>
-    <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; height: auto;</span></p>
-    <p class="rvps2"><span class="rvts6">}</span></p>
-    <p class="rvps2"><span class="rvts6">#rightBar .btn {</span></p>
-    <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; width: 50px;</span></p>
-    <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; height: 50px;</span></p>
-    <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; text-align: center;</span></p>
-    <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; line-height: 20px;</span></p>
-    <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; display: inline-block;</span></p>
-    <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; border-radius: 10px;</span></p>
-    <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; cursor: pointer;</span></p>
-    <p class="rvps2"><span class="rvts6">}</span></p>
-    <p class="rvps2"><span class="rvts6">&lt;/style&gt;</span></p>
-    <p class="rvps2"><span class="rvts6">&lt;div id="rightBar"&gt;</span></p>
-    <p class="rvps2"><span class="rvts6">&lt;div class="btn" id="shougongBtn"&gt;&lt;span&gt;&lt;a href=</span></p>
-    <p class="rvps2"><span class="rvts6">"javascript:%20window.scrollTo(0,%200);"&gt;&lt;img
-            src="https://hosting.url.com.tw/img/go-top.png" /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;</span></p>
-    <p class="rvps2"><span class="rvts6">&lt;/div&gt;</span></p>
-    <p class="rvps2"><span class="rvts6">:&lt;!-- 網頁捲軸移動至頂語法 結束 --&gt;</span></p>
-    <p class="rvps2"><span class="rvts6"><br /></span></p>
-    <p class="rvps2"><span class="rvts6"><br /></span></p>
-    <p class="rvps2"><span class="rvts6">步驟二：將上面的語法，貼在「側邊欄程式碼」裡面</span></p>
-    <p class="rvps2"><span class="rvts6"><br /></span></p>
-    <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Rwd12.jpg"></p>
-    <p class="rvps2"><span class="rvts6"><br /></span></p>
-    <p class="rvps2"><span class="rvts6"><br /></span></p>
-    <p class="rvps2"><span class="rvts6">步驟三：儲存後並且「建立網站」，網頁右側捲軸，會多出向上的按鈕，點擊此按鈕，網頁會移至最頂端</span></p>
-    <p class="rvps2"><span class="rvts6"><br /></span></p>
-    <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Easyweb-pagetop-code-02.jpeg"></p>
-    <p class="rvps2"><span class="rvts6"><br /></span></p>
-    <p class="rvps2"><span class="rvts6"><br /></span></p>
-    <p></p>
+    <a href="https://www.google.com">Mozilla Manifesto</a>
 </body>
-
 </html>
